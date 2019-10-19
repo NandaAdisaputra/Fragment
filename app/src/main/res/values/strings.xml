@@ -20,6 +20,23 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="android_developer">Android Developer</string>
     <string name="change_language_settings">Change Language Settings</string>
+    <string name="data_student">Data Student</string>
+    <string name="tambah_data_siswa">Tambah Data Siswa</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="usia">Usia</string>
+    <string name="masukkan_usia">Masukkan Usia</string>
+    <string name="masukkan_alamat">Masukkan Alamat</string>
+    <string name="peminatan_kelas">Peminatan Kelas</string>
+    <string name="pilih">Pilih</string>
+    <string name="kelas_pilihan">Kelas Pilihan</string>
+    <string name="foto_siswa">Foto Siswa</string>
+    <string name="ambil_foto">Ambil Foto</string>
+    <string name="simpan">Simpan</string>
+    <string name="alamat">Alamat</string>
+    <string name="detail_siswa">Detail Siswa</string>
+    <string name="jurusan">Jurusan</string>
+    <string name="update">UPDATE</string>
+    <string name="hapus">HAPUS</string>
 
     <string-array name="movie_name">
         <item>Nanda Adi</item>

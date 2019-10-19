@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?><!--TODO 4 Atur tampilan tambah siswa-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activity.AddStudentActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:text="@string/tambah_data_siswa"
+        android:textSize="20sp" />
+
+    <!--Nama Siswa-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nama"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/asa_edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/masukkan_nama"
+            android:textSize="14sp"
+            tools:ignore="Autofill,TextFields" />
+
+    </LinearLayout>
+
+    <!--Usia Siswa-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/usia"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/asa_edt_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/masukkan_usia"
+            android:inputType="number"
+            android:textSize="14sp"
+            tools:ignore="Autofill" />
+
+    </LinearLayout>
+
+    <!--Alamat Siswa-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/asa_edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:hint="@string/masukkan_alamat"
+            android:inputType="textMultiLine"
+            android:minHeight="80dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill" />
+
+    </LinearLayout>
+
+    <!--Peminatan Jurusan-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/asa_tv_title_major"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/peminatan_kelas"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/asa_tv_choose_study"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/pilih"
+            android:textColor="#2196F3" />
+
+        <EditText
+            android:id="@+id/asa_tv_major"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/asa_tv_choose_study"
+            android:layout_toEndOf="@id/asa_tv_title_major"
+            android:enabled="false"
+            android:hint="@string/kelas_pilihan"
+            android:textSize="14sp"
+            tools:ignore="Autofill,TextFields" />
+    </RelativeLayout>
+
+    <!--Foto profil-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/asa_tv_title_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/foto_siswa"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/asa_iv_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/image"
+            android:layout_below="@id/asa_tv_title_photo"
+            android:background="#F0EDED" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/asa_iv_photo"
+            android:text="@string/ambil_foto"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/asa_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/simpan" />
+
+</LinearLayout>
