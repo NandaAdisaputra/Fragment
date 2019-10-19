@@ -44,7 +44,7 @@ class FragmentSatu: Fragment() {
 
     fun initView(view: View){
         initData()
-        val rv = view.findViewById<RecyclerView>(R.id.rv_list_movie)
+        val rv = view.findViewById<RecyclerView>(R.id.rv_list_item)
         rv.layoutManager = LinearLayoutManager(activity)
         rv.adapter = activity?.let { RecyclerViewAdapter(it, items) }
     }

@@ -37,7 +37,17 @@
     <string name="jurusan">Jurusan</string>
     <string name="update">UPDATE</string>
     <string name="hapus">HAPUS</string>
+    <string name="sekolah">Sekolah</string>
+    <string name="tahun_lulus">Tahun Lulus</string>
+    <string name="universitas">Universitas</string>
+    <string name="jurusan_kuliah">Jurusan Kuliah</string>
+    <string name="teknik_informatika">Teknik Informatika</string>
+    <string name="universitas_semarang">Universitas Semarang</string>
+    <string name="ipa">IPA</string>
+    <string name="_2014">2014</string>
+    <string name="share">Share</string>
 
+    <!--    Sesuai dengan tema yang kalian gunakan, ex. movie -->
     <string-array name="movie_name">
         <item>Nanda Adi</item>
         <item>Affandy</item>

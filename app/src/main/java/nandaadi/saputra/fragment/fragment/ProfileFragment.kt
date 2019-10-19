@@ -1,5 +1,6 @@
 package nandaadi.saputra.fragment.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import nandaadi.saputra.fragment.R
+import nandaadi.saputra.fragment.activity.DetailProfileActivity
 import org.jetbrains.anko.find
 import org.jetbrains.anko.support.v4.toast
 
@@ -39,9 +41,8 @@ class ProfileFragment : Fragment(), View.OnClickListener {
         when (v?.id) {
             R.id.detail -> {
                 toast("Masuk Ke Detail Activity")
-            }
-
-            else -> {
+                val intent = Intent (this@ProfileFragment.context,DetailProfileActivity::class.java)
+                startActivity(intent)
             }
         }
     }

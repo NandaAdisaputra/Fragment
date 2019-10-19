@@ -20,10 +20,10 @@ class RecyclerViewAdapter(
 // RecyclerView nya kita extend ke parrent(orang tua) nya RecyclerView yaitu RecyclerViewAdapter
 {
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val name = view.findViewById<TextView>(R.id.tv_name_team)
+        val name = view.findViewById<TextView>(R.id.tv_nama_gambar)
         // tv_name_team diganti dengan variabel name, kemudian mencari view dari id
         // list_item.xml bernama tv_name_team
-        val image = view.findViewById<ImageView>(R.id.iv_team);
+        val image = view.findViewById<ImageView>(R.id.iv_gambar);
 
     }
 
