@@ -2,7 +2,6 @@
     <string name="app_name">Fragment</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="setting">Setting</string>
     <string name="home">Home</string>
     <string name="profil">Profil</string>
@@ -77,4 +76,14 @@
         <item>@drawable/poster_marrypopins</item>
         <item>@drawable/poster_bohemian</item>
     </array>
+    <string name="title_activity_maps">Map</string>
+    <string name="map">Map</string>
+    <string name="history">History</string>
+    <string name="transaksi">Transaksi</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="smk_coding_batch_1_2019">SMK CODING BATCH 1 2019</string>
+    <string name="hallo_ini_fragment_info">Hallo Ini Fragment Info</string>
+    <string name="hallo_ini_fragment_history">Hallo Ini Fragment History</string>
+    <string name="hello_ini_fragment_tiga">Hello Ini Fragment Tiga</string>
+    <string name="hallo_ini_fragment_dua">Hallo ini Fragment Dua</string>
 </resources>

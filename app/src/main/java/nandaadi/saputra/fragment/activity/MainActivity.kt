@@ -15,6 +15,7 @@ import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import nandaadi.saputra.fragment.R
+import nandaadi.saputra.fragment.fragment.HistoryFragment
 import nandaadi.saputra.fragment.fragment.HomeFragment
 import nandaadi.saputra.fragment.fragment.InfoFragment
 import nandaadi.saputra.fragment.fragment.ProfileFragment
@@ -33,6 +34,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 }
                 R.id.info -> {
                     val fragment = InfoFragment.newInstance()
+                    addFragment(fragment)
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.history -> {
+                    val fragment = HistoryFragment.newInstance()
                     addFragment(fragment)
                     return@OnNavigationItemSelectedListener true
                 }
@@ -106,17 +112,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.add -> {
+            R.id.nav_add -> {
                 val intent = Intent(this@MainActivity, StudentActivity::class.java)
                 startActivity(intent)
             }
-            R.id.nav_gallery -> {
+            R.id.nav_map -> {
+                val intent = Intent(this@MainActivity, MapsActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.nav_transaksi -> {
 
             }
-            R.id.nav_slideshow -> {
-
-            }
-            R.id.nav_manage -> {
+            R.id.nav_pengaturan -> {
 
             }
             R.id.nav_share -> {
