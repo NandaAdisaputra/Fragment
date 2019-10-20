@@ -22,7 +22,7 @@ class RecyclerViewAdapter(
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val name = view.findViewById<TextView>(R.id.tv_nama_gambar)
         // tv_name_team diganti dengan variabel name, kemudian mencari view dari id
-        // list_item.xml bernama tv_name_team
+        // list_item.xml bernama tv_nama_gambar
         val image = view.findViewById<ImageView>(R.id.iv_gambar);
 
     }

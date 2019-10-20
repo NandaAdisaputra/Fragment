@@ -86,4 +86,7 @@
     <string name="hallo_ini_fragment_history">Hallo Ini Fragment History</string>
     <string name="hello_ini_fragment_tiga">Hello Ini Fragment Tiga</string>
     <string name="hallo_ini_fragment_dua">Hallo ini Fragment Dua</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
 </resources>
