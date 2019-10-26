@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Fragment</string>
-
+    <string name="api_key">b0edd780092adcc23a05e64c724d6e88</string>
+    <string name="base_path_poster">https://image.tmdb.org/t/p/w342/</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="setting">Setting</string>
     <string name="home">Home</string>
@@ -44,7 +45,6 @@
     <string name="universitas_semarang">Universitas Semarang</string>
     <string name="ipa">IPA</string>
     <string name="_2014">2014</string>
-    <string name="share">Share</string>
 
     <!--    Sesuai dengan tema yang kalian gunakan, ex. movie -->
     <string-array name="movie_name">
@@ -89,4 +89,5 @@
     <string name="communicate">Communicate</string>
     <string name="share">Share</string>
     <string name="send">Send</string>
+    <string name="movie">Movie</string>
 </resources>

@@ -17,8 +17,12 @@
                 android:icon="@drawable/ic_shopping"
                 android:title="@string/transaksi"/>
         <item
+            android:id="@+id/nav_movie"
+            android:icon="@drawable/ic_local_movies"
+            android:title="@string/movie"/>
+        <item
                 android:id="@+id/nav_pengaturan"
-                android:icon="@drawable/ic_settings_black_24dp"
+                android:icon="@drawable/ic_settings"
                 android:title="@string/pengaturan"/>
     </group>
 

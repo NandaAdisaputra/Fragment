@@ -120,6 +120,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val intent = Intent(this@MainActivity, MapsActivity::class.java)
                 startActivity(intent)
             }
+            R.id.nav_movie -> {
+                val intent = Intent(this@MainActivity, MovieActivity::class.java)
+                startActivity(intent)
+            }
             R.id.nav_transaksi -> {
 
             }
