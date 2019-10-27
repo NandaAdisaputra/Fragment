@@ -9,12 +9,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import nandaadi.saputra.fragment.R
-import nandaadi.saputra.fragment.model.ResultsItem
+import nandaadi.saputra.fragment.model.Item
 
 class RecyclerViewAdapter(
     private val context: Context,
     // context dia berlaku sebagai this (ini)
-    private val items: List<ResultsItem>
+    private val items: MutableList<Item>
     // variabel dari ResultsItem.ktItem.kt bernama items
 ) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>()
 // RecyclerView nya kita extend ke parrent(orang tua) nya RecyclerView yaitu RecyclerViewAdapter
@@ -44,8 +44,8 @@ class RecyclerViewAdapter(
     }
 
     override fun onBindViewHolder(holder: RecyclerViewAdapter.ViewHolder, position: Int) {
-        Glide.with(context).load(items.get(position).posterPath).into(holder.image)
-        holder.name.text = items.get(position).title
+        Glide.with(context).load(items.get(position).image).into(holder.image)
+        holder.name.text = items.get(position).name
 
     }
 

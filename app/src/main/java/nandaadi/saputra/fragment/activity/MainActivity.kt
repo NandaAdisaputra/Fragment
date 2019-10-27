@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        // Handle navigation view item clicks here.
+        // Handle navigation view Item clicks here.
         when (item.itemId) {
             R.id.nav_add -> {
                 val intent = Intent(this@MainActivity, StudentActivity::class.java)

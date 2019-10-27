@@ -11,11 +11,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 import nandaadi.saputra.fragment.R
 import nandaadi.saputra.fragment.adapter.RecyclerViewAdapter
-import nandaadi.saputra.fragment.model.ResultsItem
+import nandaadi.saputra.fragment.model.Item
 
 class FragmentSatu: Fragment() {
 
-    private var items: MutableList<ResultsItem> = mutableListOf()
+    private var items: MutableList<Item> = mutableListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,8 +33,8 @@ class FragmentSatu: Fragment() {
         items.clear()
         for (i in name.indices){
             items.add(
-                ResultsItem(name[i],
-                    image.getResourceId(i, 0).toString()
+                Item(name[i],
+                    image.getResourceId(i, 0)
                 )
             )
         }
