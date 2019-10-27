@@ -36,7 +36,8 @@ class StudentAdapter(val context: Context, val list: List<StudentContract>)
             itemView.is_tv_student_age.text = studentContract.age.toString()
 
             itemView.onClick {
-                itemView.context.startActivity(itemView.context.intentFor<DetailStudentActivity>("student" to studentContract))
+                itemView.context.startActivity(itemView.context.intentFor
+                <DetailStudentActivity>("student" to studentContract))
             }
         }
 
